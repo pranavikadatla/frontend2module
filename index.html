@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+    <img height=50 src="./assests/logo.jpg"/>
+        </div>
+<a href="#" style ="color:green" >Home</a>
+     <a href="#" >Explore</a>
+     <a href="#">Help</a>
+     <img  height =40 src="./assests/photo.jpg"/>
+
+    </nav>
+    <div class="mainimage">
+        <div class="content">
+        <h1 style="color:orangered">Trending now</h1>
+        <h1 style="color:white">Mike’s famous salad <br> with cheese</h1>
+        <p style="color:white"> By John Mike</p>
+        </div>
+    </div>
+    <div class="heading">
+        <h2 >Search For Recipes</h2>
+        <div class="search" id="searchId">
+            <div>
+            <i class="fa-solid fa-magnifying-glass" style="color: #a7aaaf; padding: 2px; margin:2px"></i>
+        <input class="searchinput" type="text" placeholder="search for recipes..."/>
+        </div>
+        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff; background-color: green; padding:6px"class="glass"></i>
+        </div>
+    </div>
+    <div class="buttons">
+     <button class="all btn" style=" background-color:orange">All Recipes      <i class="fa-solid fa-chevron-left" style="color: #ffffff; margin-left:60px;"></i> </button>
+     <button class="veg btn " style="background-color:lawngreen">Veg Recipes Only <i class="fa-solid fa-chevron-left" style="color: #ffffff; margin-left: 30px;"></i> </button>
+     <button class="non veg btn"  style="background-color:red">Non-Veg Recipes <i class="fa-solid fa-chevron-left" style="color: #ffffff; margin-left:30px" ></i> </button>
+    </div>
+    <div class="main">
+        <div class="filters">
+            <h2>Filters</h2>
+            <h3>Rating</h3>
+            <label>
+            <input type="radio" value="4 and above" name="radio" checked/> 4and Above
+         </label><br>
+         <label>
+            <input type="radio" value="Below 4" name="radio" /> Below 4
+         </label>
+        </div>
+        <div id="section">
+         
+        </div>
+    </div>
+    <footer class="footer">
+        <div>
+          <img height=50 width=70 src="./assests/logo.jpg" />
+          <p>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</p> 
+        </div>
+        <div>
+            <h4>Company</h4>
+            <p>Home</p>
+            <p>Explore</p>
+            <p>Team</p>
+            <p>About us</p>
+            <p>Activity</p>
+
+        </div>
+        <div>
+            <h4>Resources</h4>
+            <p>Blog</p>
+            <p>Use Cases</p>
+            <p>Testimonials</p>
+            <p>Insights</p>
+        </div>
+        <div>
+            <img height=50 width=70 src="./assests/logo.jpg" />
+            <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>  
+           <div class=footer-email>
+            <label>
+            <input type =text name="Email" placeholder="Your Email                    @" /></label>
+            <button class="subscribe"> subscribe</button>
+             
+           </div> 
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
