@@ -122,6 +122,11 @@ const array=[
 ]
 const section=document.getElementById("section");
 const searchedName=document.getElementById("searchId");
+const showAllBtn=document.getElementById("showAllBtn");
+const vegBtn=document.getElementById("vegBtn");
+const nonVegBtn=document.getElementById("nonVegBtn");
+const above4=document.getElementById("above4");
+const below4=document.getElementById("below4");
 function createCard(element){
     const cardDiv=document.createElement("div");
     cardDiv.classList.add("card");
@@ -168,6 +173,23 @@ function filterCards(searchedElement){
         createCard(element);
      })
 }
+function toggleCards(type){
+    section.innerHTML="";
+    let toggleElements;
+    if(type==="all"){
+        toggleElements=array;
+    }else{
+        toggleElements=array.filter((element)=>element.type===type);
+    }
+    
+    console.log("toggleElements",toggleElements);
+    toggleElements.forEach(element=>{
+        createCard(element);
+     })
+}
+showAllBtn.addEventListener("click", () => toggleCards("all"));
+vegBtn.addEventListener("click", () => toggleCards("veg"));
+nonVegBtn.addEventListener("click", () => toggleCards("non-veg"));
 searchedName.addEventListener("input",(event)=>{
     const searchedElement=event.target.value.trim();
     

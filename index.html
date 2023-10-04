@@ -32,19 +32,19 @@
         </div>
     </div>
     <div class="buttons">
-     <button class="all btn" style=" background-color:orange">All Recipes      <i class="fa-solid fa-chevron-left" style="color: #ffffff; margin-left:60px;"></i> </button>
-     <button class="veg btn " style="background-color:lawngreen">Veg Recipes Only <i class="fa-solid fa-chevron-left" style="color: #ffffff; margin-left: 30px;"></i> </button>
-     <button class="non veg btn"  style="background-color:red">Non-Veg Recipes <i class="fa-solid fa-chevron-left" style="color: #ffffff; margin-left:30px" ></i> </button>
+     <button id="showAllBtn" class="all btn" style=" background-color:orange">All Recipes      <i class="fa-solid fa-chevron-left" style="color: #ffffff; margin-left:60px;"></i> </button>
+     <button id="vegBtn" class="veg btn " style="background-color:lawngreen">Veg Recipes Only <i class="fa-solid fa-chevron-left" style="color: #ffffff; margin-left: 30px;"></i> </button>
+     <button id="nonVegBtn" class="non veg btn"  style="background-color:red">Non-Veg Recipes <i class="fa-solid fa-chevron-left" style="color: #ffffff; margin-left:30px" ></i> </button>
     </div>
     <div class="main">
         <div class="filters">
             <h2>Filters</h2>
             <h3>Rating</h3>
             <label>
-            <input type="radio" value="4 and above" name="radio" checked/> 4and Above
+            <input id="above4" type="radio" value="4 and above" name="radio" checked/> 4and Above
          </label><br>
          <label>
-            <input type="radio" value="Below 4" name="radio" /> Below 4
+            <input id="below4" type="radio" value="Below 4" name="radio" /> Below 4
          </label>
         </div>
         <div id="section">
