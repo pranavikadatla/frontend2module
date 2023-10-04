@@ -102,12 +102,26 @@ a{
 .footer>div{
     flex:1;
 }
+.para{
+    margin-right: 50px;
+}
 .subscribe{
     padding:2px;
     background-color: green;
     color:white;
     
 
+}
+.icons{
+    padding:30px;
+    margin:0px 10px;
+}
+.flast{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0px 100px;
+    justify-content:space-around;
+    align-items: center; ! important
 }
 @media screen and (max-width:768px){
   .navbar{
@@ -139,5 +153,9 @@ a{
   }
   .last{
     margin: 10px;
+  }
+  .flast{
+    display:flex;
+    justify-content: space-around;
   }
 }
