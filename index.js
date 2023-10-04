@@ -187,6 +187,24 @@ function toggleCards(type){
         createCard(element);
      })
 }
+function filterCards(){
+    section.innerHTML="";
+    let ratingElements;
+    if(above4.checked){
+        ratingElements=array.filter((element)=>element.rating>=4);
+    }else if(below4.checked){
+        ratingElements=array.filter((element)=>element.rating<4);
+    }else{
+        ratingElements=array;
+    }
+    console.log("ratingElements",ratingElements);
+    ratingElements.forEach(element=>{
+        createCard(element);
+     })
+
+}
+above4.addEventListener("change", filterCards);
+below4.addEventListener("change",filterCards);
 showAllBtn.addEventListener("click", () => toggleCards("all"));
 vegBtn.addEventListener("click", () => toggleCards("veg"));
 nonVegBtn.addEventListener("click", () => toggleCards("non-veg"));
