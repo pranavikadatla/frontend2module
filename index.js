@@ -160,9 +160,9 @@ function createCard(element){
 }
 function filterCards(searchedElement){
     section.innerHTML="";
-    const filteredElements=array.filter((element)=>{
-        element.name.toLowerCase().includes(searchedElement.toLowerCase()); 
-    });
+    const filteredElements=array.filter((element)=>
+        element.name.toLowerCase().includes(searchedElement.toLowerCase())
+    );
     console.log("filteredElements",filteredElements);
      filteredElements.forEach(element=>{
         createCard(element);

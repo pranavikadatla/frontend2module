@@ -29,11 +29,20 @@ a{
     padding:113px 100px;
 }
 .search{
-    background:#f3f3f3;;
+    background:#f3f3f3;
     margin:10px;
     padding:3px;
     display:flex;
     justify-content: space-between;
+}
+.searchinput{
+    padding: 5px;
+    background-color: #f3f3f3;
+    border: none;
+    height: 30px;
+    width:98%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .heading{
     margin:10px 52px;
