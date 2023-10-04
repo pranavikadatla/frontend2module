@@ -187,7 +187,7 @@ function toggleCards(type){
         createCard(element);
      })
 }
-function filterCards(){
+function filterRatingCards(){
     section.innerHTML="";
     let ratingElements;
     if(above4.checked){
@@ -203,8 +203,8 @@ function filterCards(){
      })
 
 }
-above4.addEventListener("change", filterCards);
-below4.addEventListener("change",filterCards);
+above4.addEventListener("click", filterRatingCards);
+below4.addEventListener("click",filterRatingCards);
 showAllBtn.addEventListener("click", () => toggleCards("all"));
 vegBtn.addEventListener("click", () => toggleCards("veg"));
 nonVegBtn.addEventListener("click", () => toggleCards("non-veg"));
